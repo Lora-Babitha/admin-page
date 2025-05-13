@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+  <div class="main-container">
+    <div class="login-container">
+      <div class="logo-area">
+        <img src="assets/Lora.png" alt="Company Logo" class="logo-img" />
+      </div>
+      <div class="login-form-area">
+        <h2>Admin Login</h2>
+        <form id="loginForm">
+          <input type="text" placeholder="Username" required />
+          <input type="password" placeholder="Password" required />
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="dashboard" style="display: none;">
+      <div class="dashboard-header">
+        <div class="ref-id">Reference ID: #123456</div>
+        <div class="user-profile">
+          <i class="fas fa-user-circle"></i> Admin
+        </div>
+      </div>
+      <div class="table-section">
+        <table>
+          <thead>
+            <tr>
+              <th>Full Name</th>
+              <th>Gender</th>
+              <th>Date of Birth</th>
+              <th>Email ID</th>
+              <th>Phone Number</th>
+              <th>Current Location/Address</th>
+              <th>Educational Qualification</th>
+              <th>Year of Graduation</th>
+              <th>Skills / Technologies Known</th>
+              <th>Years of Experience</th>
+              <th>Resume Upload</th>
+              <th>Preferred Job Role</th>
+              <th>Current Company</th>
+              <th>Expected Salary</th>
+              <th>Notice Period</th>
+              <th>Willing to Relocate?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Jane Doe</td>
+              <td>Female</td>
+              <td>1995-05-15</td>
+              <td>jane@example.com</td>
+              <td>1234567890</td>
+              <td>New York, NY</td>
+              <td>B.Tech CSE</td>
+              <td>2017</td>
+              <td>React, Node.js</td>
+              <td>3</td>
+              <td><a href="#">View</a></td>
+              <td>Frontend Developer</td>
+              <td>ABC Corp</td>
+              <td>$80,000</td>
+              <td>2 Weeks</td>
+              <td>Yes</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
